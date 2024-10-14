@@ -42,7 +42,7 @@ person = {
         street : '123 Main St',
         city : 'phnom Penh',
         zipCode : 12000
-    }
+ }
 };
 console.log(person);
 
