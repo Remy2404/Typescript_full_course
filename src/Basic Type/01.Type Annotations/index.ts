@@ -45,4 +45,19 @@ person = {
  }
 };
 console.log(person);
+//04. Type Annotations with Functions:
+// You can also annotate the type of a function using a colon (:) followed by the return type.
+function add(a: number, b: number): number {
+    return a + b;
+}
+let greeting : (name : string ) => string = function(name: string): string {
+    return `Hello, ${name}!`;
+}
+
+console.log(add(10, 5), greeting('Ramy'));
+
+let nothing : undefined = undefined;
+
+console.log(nothing);
+
 
