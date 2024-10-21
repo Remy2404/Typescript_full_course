@@ -1,7 +1,7 @@
 /* Basic Types */
 //01. Tyepe of Annotations:
-// Typescript use type annotations to specify the type of variables, parameters, and return values. 
-let names: string = 'John';
+// Typescript use type annotations to specify the type of variables, parameters, and return values.
+let names: string = "John";
 let age: number = 25;
 let active: boolean = true;
 //02. Type Inference:
@@ -16,48 +16,46 @@ let myAge: number = 30; // Type annotation for a number variable
 let isStudent: boolean = true; // Type annotation for a boolean variable
 
 //Array Types:
-let numbers : number[] = [1, 2, 3, 4, 5];
-let strings : string[] = ['apple', 'banana', 'cherry'];
-let booleans : boolean[] = [true, false, true];
-let anyArray : any[] = [1, 'hello', true, {name: 'John'}];
+let numbers: number[] = [1, 2, 3, 4, 5];
+let strings: string[] = ["apple", "banana", "cherry"];
+let booleans: boolean[] = [true, false, true];
+let anyArray: any[] = [1, "hello", true, { name: "John" }];
 
-console.log(numbers, strings, booleans, anyArray); 
+console.log(numbers, strings, booleans, anyArray);
 
 //object Types:
-let person : {
-    name : string,
-    age : number,
-    isStudent : boolean
-    address : {
-        street : string,
-        city : string,
-        zipCode : number
-    }
+let person: {
+  name: string;
+  age: number;
+  isStudent: boolean;
+  address: {
+    street: string;
+    city: string;
+    zipCode: number;
+  };
 };
 person = {
-    name : 'Phon Ramy',
-    age : 21,
-    isStudent : true,
-    address : {
-        street : '123 Main St',
-        city : 'phnom Penh',
-        zipCode : 12000
- }
+  name: "Phon Ramy",
+  age: 21,
+  isStudent: true,
+  address: {
+    street: "123 Main St",
+    city: "phnom Penh",
+    zipCode: 12000,
+  },
 };
 console.log(person);
 //04. Type Annotations with Functions:
 // You can also annotate the type of a function using a colon (:) followed by the return type.
 function add(a: number, b: number): number {
-    return a + b;
+  return a + b;
 }
-let greeting : (name : string ) => string = function(name: string): string {
-    return `Hello, ${name}!`;
-}
+let greeting: (name: string) => string = function (name: string): string {
+  return `Hello, ${name}!`;
+};
 
-console.log(add(10, 5), greeting('Ramy'));
+console.log(add(10, 5), greeting("Ramy"));
 
-let nothing : undefined = undefined;
+let nothing: undefined = undefined;
 
 console.log(nothing);
-
-

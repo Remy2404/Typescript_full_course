@@ -1,4 +1,4 @@
 //Boolean
-let pending : boolean = true;
-let completed : boolean = false;
+let pending: boolean = true;
+let completed: boolean = false;
 console.log(pending, completed);

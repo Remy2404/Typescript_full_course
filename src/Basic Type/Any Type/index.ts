@@ -4,10 +4,9 @@ This can lead to unexpected behavior and should be avoided unless absolutely nec
 
  */
 const json = {
-    "latitude": 37.7749,
-    "longitude": -122.4194
-
-}
+  latitude: 37.7749,
+  longitude: -122.4194,
+};
 /* const currentLocation = JSON.parse(JSON.stringify(json));
 console.log(currentLocation);
 let result: any;
@@ -19,7 +18,6 @@ result.willExist(); */ //error : Property 'willExist' does not exist on type 'nu
 let str: any = "Hello World";
 let strLength: number = str;
 console.log(strLength);
-
 
 let strLength2: number = (str as string).length;
 

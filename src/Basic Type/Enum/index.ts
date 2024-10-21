@@ -8,11 +8,11 @@
  */
 // The syntax if an enum is as follows:
 enum Color {
-    Red = 0,
-    Green = 1,
-    Blue = 2,
-    Yellow = 3,
-    Purple = 4,
+  Red = 0,
+  Green = 1,
+  Blue = 2,
+  Yellow = 3,
+  Purple = 4,
 }
 
 const myColor = Color.Green;
@@ -20,33 +20,33 @@ const myColoar2 = Color.Red;
 console.log(myColoar2);
 console.log(myColor);
 
-function isitSummer(month : number ) {
-    let isSummber : boolean;
-if (month > 5 && month < 9){
+function isitSummer(month: number) {
+  let isSummber: boolean;
+  if (month > 5 && month < 9) {
     isSummber = true;
-} else {
+  } else {
     isSummber = false;
-} return isSummber;
-
+  }
+  return isSummber;
 }
 const isSummer = isitSummer(7);
 console.log(isSummer);
 
 enum ApprovalStatus {
-    draft,
-    submitted,
-    approved,
-    rejected
-};
-const request =  {
-    id: 1,
-    status: ApprovalStatus.approved,
-    description: 'Please approve this request'
+  draft,
+  submitted,
+  approved,
+  rejected,
+}
+const request = {
+  id: 1,
+  status: ApprovalStatus.approved,
+  description: "Please approve this request",
 };
 
-if(request.status === ApprovalStatus.approved) {
-    // send an email
-    console.log('Send email to the Applicant...');
+if (request.status === ApprovalStatus.approved) {
+  // send an email
+  console.log("Send email to the Applicant...");
 }
 //summary to use enum :
 /* 

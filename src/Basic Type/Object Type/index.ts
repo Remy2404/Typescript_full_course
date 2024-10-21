@@ -10,46 +10,46 @@ The primtive types in typescript are:
  .null
  .undefined
  */
-let employee : object;
+let employee: object;
 
 employee = {
-    fistName: 'Ramy',
-    lastName: 'Phon',
-    age: 21,
-    jobTitle: 'Software Engineer',
-    isManager: false
+  fistName: "Ramy",
+  lastName: "Phon",
+  age: 21,
+  jobTitle: "Software Engineer",
+  isManager: false,
 };
 //adding a new property to the object
-(employee as any)['department'] = 'ITE';
-(employee as any)['salary'] = 50000;
-(employee as any)['address'] = '123 Main Street';
-(employee as any)['email'] = 'rosexmee1122@gmail.com';
-(employee as any)['phone'] = '0962064081';
-(employee as any)['isMarried'] = false;
-(employee as any)['spouse'] = null;
+(employee as any)["department"] = "ITE";
+(employee as any)["salary"] = 50000;
+(employee as any)["address"] = "123 Main Street";
+(employee as any)["email"] = "rosexmee1122@gmail.com";
+(employee as any)["phone"] = "0962064081";
+(employee as any)["isMarried"] = false;
+(employee as any)["spouse"] = null;
 
 //Type Assertion
 
-Object.assign(employee, {isManager: true})
-let employees : Record<string, any> = {
-    fistName: 'Ramy',
-    lastName: 'Phon',
-    age: 21,
-    jobTitle: 'Software Engineer',
-    isManager: false
+Object.assign(employee, { isManager: true });
+let employees: Record<string, any> = {
+  fistName: "Ramy",
+  lastName: "Phon",
+  age: 21,
+  jobTitle: "Software Engineer",
+  isManager: false,
 };
 
 let employeess = {} as {
-    fistName: string,
-    lastName: string,
-    age: number,
-    jobTitle: string,
-    isManager: boolean
+  fistName: string;
+  lastName: string;
+  age: number;
+  jobTitle: string;
+  isManager: boolean;
 };
-employeess.fistName = 'Rima, Jane';
-employeess.lastName = 'Phon';
+employeess.fistName = "Rima, Jane";
+employeess.lastName = "Phon";
 employeess.age = 21;
-employeess.jobTitle = 'Software Engineer';
+employeess.jobTitle = "Software Engineer";
 employeess.isManager = false;
 console.log(employeess);
 //displaying the updated object:

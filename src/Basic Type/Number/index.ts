@@ -11,23 +11,23 @@ let price: number = 10.5;
 //Binary number
 /* The binary number uses a leading Zero followed by a lowercase or uppercase letter
 "B" e.g, 0b or 0B */
-let binaryNumber : number = 0b100;
-let anotherBinary : number = 0B010;
+let binaryNumber: number = 0b100;
+let anotherBinary: number = 0b010;
 
 //Type casting
-let xx : number = 10;
-let yx : string = xx.toString();
+let xx: number = 10;
+let yx: string = xx.toString();
 
 //Type coercion
-let x1 : number = 10;
+let x1: number = 10;
 
-let y1 : any = x1 + "20";
+let y1: any = x1 + "20";
 console.log(y1);
 console.log(yx);
 
 //Number functions
 
-let num : number = 10;
+let num: number = 10;
 console.log(Math.sqrt(num));
 console.log(Math.abs(-10));
 console.log(Math.floor(10.8));
@@ -36,9 +36,9 @@ console.log(Math.round(10.5));
 
 //Infinity and NaN
 
-let infinityNum : number = Infinity;
-let negativeInfinityNum : number = -Infinity;
-let nanNum : number = NaN;
+let infinityNum: number = Infinity;
+let negativeInfinityNum: number = -Infinity;
+let nanNum: number = NaN;
 
 console.log(infinityNum);
 console.log(negativeInfinityNum);
@@ -48,22 +48,22 @@ console.log(nanNum);
 
 /* An octal number uses a leading Zero followed the letter 
 "O" e.g, 0O or 0o */
-let octalNumber : number = 0o10;
+let octalNumber: number = 0o10;
 
 //Hexadecimal number
 /* 
 The hexadecimal number uses a leading Zero followed by a lowercase or uppercase letter
-"X" e.g, 0x or 0X */ 
-let hexadecimalNumber : number = 0x10;
+"X" e.g, 0x or 0X */
+let hexadecimalNumber: number = 0x10;
 console.log(octalNumber);
 console.log(octalNumber);
 
 //Number Range
-let maxNumber : number = Number.MAX_VALUE;
+let maxNumber: number = Number.MAX_VALUE;
 
 console.log(maxNumber);
 
-let minNumber : number = Number.MIN_VALUE;
+let minNumber: number = Number.MIN_VALUE;
 
 console.log(minNumber);
 
